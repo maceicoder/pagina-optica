@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/*header */
+
+#header .nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    
+    
+}
+
+
+
+#header .nav ul li a{
+    padding: 1px 105.5px;
+    border: 2px solid #715d9d;
+    background-color: white;
+    color: black;
+    
+}
+
+#header .nav ul li a:hover{
+    background-color: black;
+    color: white;
+}
+/*index*/
+
+#productos_recomendados{
+    background-color: lightgray;
+}
+
+#productos_recomendados .tituloProductosRecomendados{
+    text-align: center;
+}
+
+#productos_recomendados .productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#productos_recomendados .productos .imagenes{
+    border:2px solid;
+    transition: 1s;
+}
+#productos_recomendados .productos .imagenes:hover{
+    height: 250px ;
+    width: 250px ;
+}
+#productos_recomendados .descripcionProductos{
+    color: black;
+    text-align: center;
+}
+    
+
+/*nosotros */
+#nosotros .gridNosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#nosotros .tituloNosotros{
+    display: grid;
+    text-align: center;
+    font-size: 60px;
+    background-color: lightgray;
+}
+
+#nosotros .nosotrosParrafo{
+    color: white;
+    background-color: black;
+    font-size: 37px 
+    
+}
+
+/* direccion*/
+#direccion{
+    background-color: lightgray;
+}
+
+#direccion .direccionTitulo{
+    text-align: center; 
+    
+}
+#direccion .mapa{
+    display: flex;
+    justify-content: center;
+}
+/*productos */
+#bloqueProductos{
+   background-color: lightgray;
+}
+#bloqueProductos .productosMuestra{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content:center;
+
+}
+
+#bloqueProductos .tituloProductos{
+text-align: center;
+font-size: 50px;
+
+}
+
+#bloqueProductos img{
+    border:2px solid;
+    transition: all 1s;
+}
+#bloqueProductos img:hover{
+    height: 250px ;
+    width: 250px ;
+}
+#bloqueProductos .descripcionProductos{
+    display: flex;
+    text-align: center;
+
+}
+/* contacto*/
+#contacto{
+    background-color: lightgray;  
+    background-size: cover;
+
+}
+#contacto .tituloContacto{
+    text-align: center;
+    font-size: 60px;
+}
+#contacto .horarioYformulario{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+
+}
+#contacto .horarioYformulario .formularios{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    border: 2px solid;
+    text-align: center;
+    
+}
+#contacto .horarioYformulario .formulario .mensaje{
+    text-align: center;
+}  
+#contacto .horarioYformulario .horario{
+    text-align: center;
+}
+#contacto .formTitulo{
+    text-align: left;
+}
+#contacto .inputNosotros{
+    height: 20px;
+    width: 300px;
+    transition: all 1s;
+}
+#contacto .inputNosotros:focus{
+    height: 30px;
+    width: 350px;
+
+}
+/* footer*/
+#footer{
+    grid-area: footer;
+    background-color: lightslategrey;
+    background-size: cover;
+}
+
+#footer .secion{
+    display: flex;
+    justify-content: space-between;
+}
