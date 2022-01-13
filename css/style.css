@@ -160,13 +160,9 @@ grid-template-columns: repeat(2,1fr);
 #contacto .inputNosotros{
     height: 20px;
     width: 300px;
-    transition: all 1s;
+   
 }
-#contacto .inputNosotros:focus{
-    height: 30px;
-    width: 350px;
 
-}
 /* footer*/
 #footer{
     grid-area: footer;

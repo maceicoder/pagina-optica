@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="/img/Sin título.png" type="image/x-icon">
         <title>contacto</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <body>
         <header id="header">
@@ -15,15 +16,23 @@
                     <img src="../img/12191926_1058006040898535_6622056830340443388_n.png" width="100%" height="200px" alt=""> 
                 </a>
             </section>  
-                <nav class="nav">
-                    <ul>
-                        <li><a href="/index.html">inicio</a></li>
-                        <li><a href="/pages/nosotros.html">nosotros </a></li> 
-                        <li><a href="/pages/productos.html">productos</a></li>
-                        <li><a href="/pages/contacto.html">contacto</a></li>
-                        <li><a href="/pages/direccion.html">direccion</a></li>
-                    </ul>
-                </nav>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="/index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/nosotros.html">nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/productos.html">productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/pages/contacto.html">contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/direccion.html">direccion</a>
+                </li>
+              </ul>
         </header>
         <section id="contacto">
             <div class="tituloContacto">
@@ -32,24 +41,26 @@
             <div class="horarioYformulario">
                 <div class="horario">
                     <p><h2>Horario de atencion:</h2>lunes a viernes de 09:00 a 13 y de 16:30 a 20:30</p>
-                    <p><h2>Celefono:</h2>3811234567</p>
+                    <p><h2>Telefono:</h2>3811234567</p>
                 </div>
                 <div class="formulario">
                     <div class="mensaje">
                         <h2>Dejanos tu mensaje</h2>
                     </div>
-                    <div class="formularios">
-                        <form action="" method="get" enctype="text"></form>
-                        <label class="formTitulo" for="name">Nombre</label>
-                        <input class="inputNosotros" type="text" id="name">
-                        <label class="formTitulo" for="email">Email</label>
-                        <input class="inputNosotros" type="email" id="email">
-                        <label class="formTitulo" for="phone">Relefono</label>
-                        <input class="inputNosotros" type="phone" id="phone">
-                        <label class="formTitulo" for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea> 
-                        <input class="inputNosotros" type="submit" value="enviar">
-                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" >
+                        <label for="exampleFormControlInput1" class="form-label">Email </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" >
+                        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" >
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                      </div>
+                        
                 </div>
             </div>
         </section>
