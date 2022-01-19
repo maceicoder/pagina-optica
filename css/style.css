@@ -17,8 +17,6 @@
     
 }
 
-
-
 #header .nav ul li a{
     padding: 1px 105.5px;
     border: 2px solid #715d9d;
@@ -31,10 +29,14 @@
     background-color: black;
     color: white;
 }
-/*index*/
 
+/*index*/
+.navbar{
+    display: flex;
+}
 #productos_recomendados{
     background-color: lightgray;
+    height: 400px;
 }
 
 #productos_recomendados .tituloProductosRecomendados{
@@ -60,7 +62,6 @@
     color: black;
     text-align: center;
 }
-    
 
 /*nosotros */
 #nosotros .gridNosotros{
@@ -112,7 +113,6 @@ text-align: center;
 font-size: 50px;
 
 }
-
 #bloqueProductos img{
     border:2px solid;
     transition: all 1s;
@@ -178,3 +178,4 @@ grid-template-columns: repeat(2,1fr);
     display: flex;
     justify-content: space-between;
 }
+
