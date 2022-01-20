@@ -1,0 +1,35 @@
+//vars //
+$border: 2px solid grey;
+
+
+#contacto{
+    background-color: lightgray;  
+    background-size: cover;
+    .tituloContacto{
+        text-align: center;
+        font-size: 60px;
+    }
+    .horarioYformulario{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .horario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .formulario{
+            border: $border
+            .mensaje{
+                text-align: center;
+
+            }
+        }
+
+
+    }
+}
+#footer{
+    background-color: lightslategrey;
+}
