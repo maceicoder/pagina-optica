@@ -49,7 +49,6 @@
     justify-items: center;
     align-items: center;
 }
-
 #productos_recomendados .productos .imagenes{
     border:2px solid;
     transition: 1s;
