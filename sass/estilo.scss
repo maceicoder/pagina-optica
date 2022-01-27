@@ -1,7 +1,95 @@
 //vars //
 $border: 2px solid grey;
+//index //
+#productos_recomendados{
+    background-color: lightgray;
+    height: 400px;
+    .tituloProductosRecomendados{
+        text-align: center;
+}
+    }
+    .productos{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+        .imagenes{
+            border: $border;
+            transition: 1s;
+        }
+        .imagenes:hover{
+            height: 250px ;
+            width: 250px ;
+        }
+        .descripcionProductos{
+            color: black;
+            text-align: center;
+        }
+}
+//nosotros //
+#nosotros{
+    .tituloNosotros{
+        display: grid;
+        text-align: center;
+        font-size: 60px;
+        background-color: lightgray;
+    }
+    .gridNosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        .nosotrosParrafo{
+            color: white;
+            background-color: black;
+            font-size: 37px 
+        }
+    }
+}
+//productos //
+#bloqueProductos{
+    background-color: lightgray;
+    
+    .tituloProductos{
+        text-align: center;
+        font-size: 50px;
+    }
+    .productosMuestra{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content:center;
+        
+        img{
+            border:$border;
+            transition: all 1s;
+        }
+        
+        img:hover{
+            height: 250px ;
+            width: 250px ;
+        }
+        
+        .descripcionProductos{
+            display: flex;
+        text-align: center;
+        }
+    }
+}
+//direccion //
+#direccion{
+    background-color: lightgray;
+    .direccionTitulo{
+        text-align: center;
+    }
+    .mapa{
+        display: flex;
+        justify-content: center;
+        
+    }
+}
 
 
+//contacto //
 #contacto{
     background-color: lightgray;  
     background-size: cover;
@@ -20,7 +108,7 @@ $border: 2px solid grey;
         
         }
         .formulario{
-            border: $border
+            border: $border;
             .mensaje{
                 text-align: center;
 
@@ -28,6 +116,9 @@ $border: 2px solid grey;
         }
     }
 }
+
+
+//footer //
 #footer{
     background-color: lightslategrey;
 }

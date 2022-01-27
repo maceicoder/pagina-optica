@@ -1,3 +1,116 @@
+#productos_recomendados {
+  background-color: lightgray;
+  height: 400px;
+}
+
+#productos_recomendados .tituloProductosRecomendados {
+  text-align: center;
+}
+
+.productos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productos .imagenes {
+  border: 2px solid grey;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.productos .imagenes:hover {
+  height: 250px;
+  width: 250px;
+}
+
+.productos .descripcionProductos {
+  color: black;
+  text-align: center;
+}
+
+#nosotros .tituloNosotros {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  font-size: 60px;
+  background-color: lightgray;
+}
+
+#nosotros .gridNosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#nosotros .gridNosotros .nosotrosParrafo {
+  color: white;
+  background-color: black;
+  font-size: 37px;
+}
+
+#bloqueProductos {
+  background-color: lightgray;
+}
+
+#bloqueProductos .tituloProductos {
+  text-align: center;
+  font-size: 50px;
+}
+
+#bloqueProductos .productosMuestra {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#bloqueProductos .productosMuestra img {
+  border: 2px solid grey;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#bloqueProductos .productosMuestra img:hover {
+  height: 250px;
+  width: 250px;
+}
+
+#bloqueProductos .productosMuestra .descripcionProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+#direccion {
+  background-color: lightgray;
+}
+
+#direccion .direccionTitulo {
+  text-align: center;
+}
+
+#direccion .mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #contacto {
   background-color: lightgray;
   background-size: cover;
