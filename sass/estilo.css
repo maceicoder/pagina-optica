@@ -10,7 +10,7 @@
 .productos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)(3);
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   -webkit-box-align: center;
@@ -19,7 +19,7 @@
 }
 
 .productos .imagenes {
-  border: 2px solid grey;
+  border: 2px solid black;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -45,7 +45,7 @@
 #nosotros .gridNosotros {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)(2);
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
@@ -67,17 +67,17 @@
 #bloqueProductos .productosMuestra {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)(4);
-  grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)(2);
-  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #bloqueProductos .productosMuestra img {
-  border: 2px solid grey;
+  border: 2px solid black;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -124,7 +124,7 @@
 #contacto .horarioYformulario {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)(2);
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
@@ -145,7 +145,7 @@
 }
 
 #contacto .horarioYformulario .formulario {
-  border: 2px solid grey;
+  border: 2px solid black;
 }
 
 #contacto .horarioYformulario .formulario .mensaje {
