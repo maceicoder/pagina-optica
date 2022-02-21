@@ -1,5 +1,8 @@
 //vars //
 $border: 2px solid black;
+
+
+
 //list //
 $colores:(
     principal: lightgray,
@@ -7,25 +10,25 @@ $colores:(
 );
 //mixn//
 @mixin imagen {
-    height: 250px ;
-    width: 250px ;
+    transform: scale(1.1);
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 //index //
 #productos_recomendados{
-    background-color: map-get($map: $colores, principal);
+    background-color: map-get($colores, principal);
     height: 400px;
     .tituloProductosRecomendados{
+        font-family: 'Roboto Serif', sans-serif;
         text-align: center;
+        margin-bottom: 100px;
     }
-    }
+    
     .productos{
-        display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    align-items: center;
+
         .imagenes{
             border: $border;
             transition: 1s;
@@ -33,18 +36,33 @@ $colores:(
         .imagenes:hover{
             @include imagen
         }
-        .descripcionProductos{
+        .descripcionProductoIndex{
+            display: flex;
             color: black;
             text-align: center;
         }
+    }
+    @media (max-width:768px){
+        .productos{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+        }
+        
+    }
 }
+
 //nosotros //
 #nosotros{
+    background-color: map-get($colores, principal);
     .tituloNosotros{
         display: grid;
         text-align: center;
         font-size: 60px;
-        background-color: map-get($map: $colores, principal);    
+        margin-bottom: 100px;
+        font-family: 'Roboto Serif', sans-serif;
     }
     .gridNosotros{
         display: grid;
@@ -56,19 +74,32 @@ $colores:(
             font-size: 37px 
         }
     }
+    @media (max-width:768px){
+        .gridNosotros{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }
 }
+
 //productos //
 #bloqueProductos{
-background-color: map-get($map: $colores, principal);    
+background-color: map-get($colores, principal);    
     .tituloProductos{
         text-align: center;
         font-size: 50px;
+        margin-bottom: 100px;
+        font-family: 'Roboto Serif', sans-serif;
     }
     .productosMuestra{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         justify-content:center;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        
         
         img{
             border:$border;
@@ -84,12 +115,23 @@ background-color: map-get($map: $colores, principal);
         text-align: center;
         }
     }
+    @media (max-width:768px){
+        .productosMuestra{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            justify-content:center;
+            margin-left: 100px;
+        } 
+    }
 }
 //direccion //
 #direccion{
-    background-color: map-get($map: $colores, principal);
+    background-color: map-get($colores, principal);
     .direccionTitulo{
         text-align: center;
+        margin-bottom: 100px;
+        font-family: 'Roboto Serif', sans-serif;
     }
     .mapa{
         display: flex;
@@ -101,20 +143,30 @@ background-color: map-get($map: $colores, principal);
 
 //contacto //
 #contacto{
-    background-color: map-get($map: $colores, principal);  
-    background-size: cover;
+    background-color: map-get($colores, principal);  
+    
     .tituloContacto{
         @extend .mensaje;
+        text-align: center;
         font-size: 60px;
+        margin-bottom: 100px;
+        font-family: 'Roboto Serif', sans-serif;
+        
     }
     .horarioYformulario{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        margin-bottom: 100PX;
+        @media (max-width:768px){
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
         .horario{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            
         
         }
         .formulario{
@@ -130,5 +182,5 @@ background-color: map-get($map: $colores, principal);
 
 //footer //
 #footer{
-    background-color: map-get($map: $colores, pieDePagina);
+    background-color: map-get($colores, pieDePagina);
 }
